@@ -1,14 +1,14 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://c4.wallpaperflare.com/wallpaper/412/431/811/abstract-wolf-art-colors-wallpaper-preview.jpg"
+    <img src="{{photoCover}}"
     alt=""
     height="300px"
     >
   </div>
   <div class="big-card__title">
-    <h1><a href="#">Saiu Bootcamp Santander - Full Stack</a></h1>
+    <h1><a [routerLink]="['content', id]">{{cardTitle}}</a></h1>
   </div>
   <div class="big-card__description">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue tristique sollicitudin. Vivamus pellentesque congue cursus. Cras ultrices nunc at maximus scelerisque. Aenean convallis libero ut metus semper, non luctus magna consequat. Praesent consequat interdum elit, ac fermentum dui pulvinar sed. Maecenas gravida quam et iaculis egestas. In pulvinar eros ac lectus tristique, eget efficitur ex tincidunt.</p>
+    <p>{{cardDescription}}</p>
   </div>
 </div>
